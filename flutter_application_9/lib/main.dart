@@ -42,7 +42,9 @@ bool isChecked = false ;
       appBar: AppBar(backgroundColor: Colors.blueAccent,),
 
 
-     body: Column(children: [ 
+     body:SingleChildScrollView(
+     scrollDirection: Axis.horizontal,
+     child: Column(children: [ 
       
       Container(child: Image(image: AssetImage("assete/login.png"),width: 200,height: 200 ,),margin:EdgeInsets.all(30),),
 
@@ -144,6 +146,7 @@ bool isChecked = false ;
 
      ]),
 
+     ) 
 
 
       
